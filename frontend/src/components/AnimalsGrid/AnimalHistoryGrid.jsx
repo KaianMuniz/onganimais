@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-// Componente AnimalHistoryGrid para exibir o histórico dos animais
+
 function AnimalHistoryGrid({ animalId }) {
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Função para buscar o histórico do animal da API
+  
   const fetchAnimalHistory = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/animal_history/${animalId}`);  // URL para obter o histórico do animal
+      const response = await fetch(`http://localhost:3000/api/animal_history/${animalId}`);  
       if (response.ok) {
         const data = await response.json();
-        setHistory(data);  // Atualiza o estado com o histórico recebido
+        setHistory(data);  
       } else {
         console.error('Erro ao buscar o histórico do animal:', response.statusText);
       }
@@ -22,7 +22,7 @@ function AnimalHistoryGrid({ animalId }) {
     }
   };
 
-  // Chama a função de buscar o histórico do animal quando o animalId mudar ou o componente for montado
+  
   useEffect(() => {
     fetchAnimalHistory();
   }, [animalId]);

@@ -8,7 +8,7 @@ import AnimalHistoryGrid from "../components/AnimalsGrid/AnimalHistoryGrid";
 function List() {
     const [selectedAnimalId, setSelectedAnimalId] = useState(null);
 
-    // Função para selecionar o animal e mostrar o histórico
+   
     const handleAnimalClick = (id) => {
         setSelectedAnimalId(id);
     };

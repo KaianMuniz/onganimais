@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-// Componente EmployeesGrid para exibir os funcionários
+
 function EmployeesGrid() {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Função para buscar os funcionários da API
+  
   const fetchEmployees = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/employees');  // URL para obter os funcionários
+      const response = await fetch('http://localhost:3000/api/employees');  
       if (response.ok) {
         const data = await response.json();
-        setEmployees(data);  // Atualiza o estado com os funcionários recebidos
+        setEmployees(data);  
       } else {
         console.error('Erro ao buscar os funcionários:', response.statusText);
       }
@@ -22,7 +22,7 @@ function EmployeesGrid() {
     }
   };
 
-  // Chama a função de buscar os funcionários ao montar o componente
+  
   useEffect(() => {
     fetchEmployees();
   }, []);

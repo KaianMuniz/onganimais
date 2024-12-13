@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-// Componente AnimalsGrid para exibir os animais
+
 function AnimalsGrid() {
   const [animals, setAnimals] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Função para buscar os animais da API
+  
   const fetchAnimals = async () => {
     try {
       const response = await fetch('http://localhost:3000/api/animals', {
-        credentials: 'same-origin', // Isso vai garantir que os cookies não sejam enviados, se não necessários
+        credentials: 'same-origin', 
         headers: {
           'Content-Type': 'application/json',
         },
@@ -28,7 +28,7 @@ function AnimalsGrid() {
   };
   
 
-  // Chama a função de buscar os animais ao montar o componente
+  
   useEffect(() => {
     fetchAnimals();
   }, []);

@@ -4,7 +4,7 @@ import styles from "./Header.module.css"
 function Header() {
     return (
         <header className={styles.header}>
-            <span>INOVALAB</span>
+            <span>ONGOTICOS</span>
             <nav>
                 {/* Normalmente não se utiliza o a no react, utiiza o LINK (NÃO SEI AINDA COMO USA) */}
                 <Link to="/">Home</Link>
