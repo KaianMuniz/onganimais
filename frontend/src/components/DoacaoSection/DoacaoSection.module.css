@@ -1,0 +1,137 @@
+/* Estilo geral da seção de doação */
+.doacoesSection {
+    margin-top: 100px; /* Para não sobrepor com a header fixa */
+    padding: 4rem 2rem;
+    background-color: #eaf7e1; /* Fundo mais claro e suave */
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .doacoesSection h2 {
+    color: #2c6e3d; /* Verde mais escuro */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Pacifico', sans-serif; /* Fonte cartunesca */
+  }
+  
+  .doacoesSection p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Formulário de doação */
+  .doacaoForm {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    max-width: 600px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+  
+  .doacaoForm:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Aumenta a sombra quando o mouse passa por cima */
+  }
+  
+  .doacaoForm h3 {
+    margin-bottom: 1.5rem;
+    color: #4CAF50;
+    font-family: 'Pacifico', sans-serif;
+  }
+  
+  /* Estilo das labels */
+  .doacaoForm label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #555; /* Cor suave para o texto das labels */
+    margin-top: 1rem;
+  }
+  
+  /* Estilo dos inputs e selects */
+  .doacaoForm input,
+  .doacaoForm select {
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #d0e6a5; /* Borda suave verde */
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f8e7; /* Fundo suave nos campos */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Efeito quando o campo é focado */
+  .doacaoForm input:focus,
+  .doacaoForm select:focus {
+    border-color: #4CAF50; /* Verde ao focar */
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Estilo do botão */
+  .doacaoForm button {
+    background-color: #4CAF50; /* Verde vibrante */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .doacaoForm button:hover {
+    background-color: #388e3c; /* Verde mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+  }
+  
+  .doacaoForm button:active {
+    transform: translateY(0); /* Retorna ao estado original quando clicado */
+  }
+  
+  /* Estilo da seção de informações adicionais */
+  .informacoes {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+  
+  .informacoes ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .informacoes li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .informacoes li::before {
+    content: '🍃'; /* Emoji de folha */
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .informacoes li a {
+    color: #4CAF50;
+    text-decoration: underline;
+  }
+  
+  .informacoes li a:hover {
+    color: #388e3c;
+  }
+  

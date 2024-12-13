@@ -1,0 +1,96 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1c1c1c; /* Cor de fundo mais suave */
+    color: #fff;
+    border-radius: 12px; /* Adicionando bordas arredondadas para um visual mais moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar mais profundidade */
+    transition: all 0.3s ease; /* Transição suave para mudanças */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Efeito de hover para a seção inteira */
+}
+
+.content {
+    max-width: 50%;
+    padding-right: 30px; /* Espaço entre o texto e a imagem */
+}
+
+.title {
+    font-size: 48px;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    font-weight: bold; /* Tornando o título mais forte visualmente */
+    text-transform: uppercase; /* Para dar um efeito mais impactante */
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd;
+    text-align: justify; /* Justificando o texto para uma leitura mais fluída */
+}
+
+.link {
+    color: #3407d6;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #3407d6; /* Verde mais escuro para hover */
+    transform: scale(1.05); /* Efeito de zoom suave no link */
+}
+
+.media {
+    max-width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 12px; /* Arredondando as bordas da imagem */
+    object-fit: cover; /* Faz a imagem se ajustar corretamente dentro do container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
+    transition: all 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px; /* Espaço entre o texto e a imagem em telas menores */
+    }
+
+    .media {
+        max-width: 100%;
+        margin-top: 20px; /* Adicionando margem entre os elementos em telas menores */
+    }
+
+    .title {
+        font-size: 36px; /* Reduzindo o tamanho do título em telas pequenas */
+    }
+
+    .paragraph {
+        font-size: 16px; /* Reduzindo o tamanho do texto em telas pequenas */
+    }
+}

@@ -1,0 +1,66 @@
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #c3c765b8;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 36px;
+    color: #ffffff; /* Cor alaranjada */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.details {
+    margin-bottom: 20px;
+    background-color: #c3c765b8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.summary {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff; /* Cor alaranjada */
+    margin-bottom: 10px;
+}
+
+.summary:hover {
+    color: #a18174; /* Cor mais clara ao passar o mouse */
+}
+
+.detail {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 10px;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.faqButton {
+    background-color: #a89b5b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.faqButton:hover {
+    background-color: #87887b; /* Tom mais forte */
+}

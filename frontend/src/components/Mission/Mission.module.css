@@ -1,0 +1,47 @@
+.missionSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    color: #fff;
+    height: 100vh;
+  }
+  
+  .textContainer {
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+  }
+  
+  .description {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .contributeButton {
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    background-color: transparent;
+    color: #00ff00;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contributeButton:hover {
+    background-color: #00ff00;
+    color: #000;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  

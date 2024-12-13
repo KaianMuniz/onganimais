@@ -1,0 +1,63 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens no eixo horizontal */
+    margin: 20px;
+}
+
+.title {
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5722; /* Alaranjado */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.event {
+    display: flex;
+    flex-direction: column; /* Coloca os detalhes em coluna */
+    align-items: center; /* Centraliza os detalhes */
+    margin: 15px 0;
+    border-left: 2px solid #ff5722; /* Alaranjado */
+    padding: 10px 0; /* Adiciona espaço ao redor do evento */
+    width: 80%; /* Ajuste a largura se necessário */
+    transition: background-color 0.3s;
+}
+
+.event:hover {
+    background-color: rgba(255, 87, 34, 0.1); /* Leve fundo alaranjado ao passar o mouse */
+}
+
+.year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722; /* Alaranjado */
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaçamento abaixo do ano */
+}
+
+.details {
+    text-align: center; /* Centraliza os detalhes do evento */
+}
+
+.eventTitle {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: #ff5722; /* Alaranjado */
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
